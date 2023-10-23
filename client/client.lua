@@ -14,7 +14,7 @@ RegisterCommand("bcoords", function(_, args)
                 local PedHeading = GetEntityHeading(Ped)
                 local uiCoords = { x = PedCoords.x, y = PedCoords.y, z = PedCoords.z, h = PedHeading }
                 SendNUIMessage({ action = "ped_coords", PedCoords = uiCoords })
-                if IsControlPressed(0, 36) then
+                if IsControlPressed(0, 21) then
                     local timer = 0
                     while timer < waitTime do
                         Citizen.Wait(0)
