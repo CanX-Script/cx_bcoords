@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Akrobat;
+    src: url(/web/assets/Akrobat-ExtraBold.otf);
+    font-weight: 900;
+}
+
+body {
+    font-family: "Akrobat", sans-serif !important;
+}
+
+.bcoords {
+    position: absolute;
+    left: 50%;
+    bottom: 1.563vw;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.coords {
+    width: 23.438vw;
+    height: 3.125vw;
+    border-radius: 0.625vw;
+    border: 0.052vw solid #868686;
+    background: linear-gradient(
+        87deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(39, 39, 39, 0.2) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon {
+    width: 1.563vw;
+    height: 1.563vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Akrobat, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.x,
+.y,
+.z,
+.h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Akrobat, sans-serif;
+    color: #fff;
+    font-size: 0.833vw;
+    font-weight: 900;
+    gap: 0.625vw;
+}
+
+.x .icon {
+    border-radius: 0.365vw;
+    border: 0.052vw solid #f00;
+    background: rgba(255, 41, 41, 0.17);
+    color: #f00;
+}
+
+.y .icon {
+    border-radius: 0.365vw;
+    border: 0.052vw solid #0f6;
+    background: rgba(41, 255, 127, 0.17);
+    color: #0f6;
+}
+.z .icon {
+    border-radius: 0.365vw;
+    border: 0.052vw solid #0085ff;
+    background: rgba(41, 165, 255, 0.17);
+    color: #0085ff;
+}
+.h .icon {
+    border-radius: 0.365vw;
+    border: 0.052vw solid #9e9e9e;
+    background: rgba(41, 165, 255, 0.17);
+    color: #e4e4e4;
+}
+
+.helps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0.521vw;
+    margin-top: 0.521vw;
+}
+
+.shortcut {
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    padding: 0.313vw 0.521vw;
+    font-size: 0.729vw;
+    border-radius: 0.365vw;
+    border: 0.052vw solid #545454;
+    background: rgba(55, 55, 55, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-family: Akrobat;
+    font-size: 0.729vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+.hide {
+    transform: translateX(-50%) translateY(1.563vw);
+    opacity: 0;
+}
