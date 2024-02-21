@@ -16,7 +16,6 @@ ui_page 'web/index.html'
 
 client_script {
     "client/**/*",
-    'locales/*.lua',
 }
 
 files {
